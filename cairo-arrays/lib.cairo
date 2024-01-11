@@ -76,7 +76,8 @@ impl ArrayDataStructureImpl of ArrayDataStructureTrait {
         self.data = tempArray;
     }
 
-   
+    fn length(self: @ArrayDataStructure, index: u32, new_value: u32) -> usize {
+        self.data.len()
     }
 
     fn traverse(self: @ArrayDataStructure){
@@ -110,7 +111,7 @@ impl ArrayDataStructureImpl of ArrayDataStructureTrait {
         self.data = tempArray;
     }
 
-
+}
 
 // let us test it out
 fn main(){
