@@ -11,7 +11,7 @@ struct LinkedList<T> {
 
 trait LinkedListTrait<T> {
     fn new(ref self: LinkedList<T>)->LinkedList<T>;
-    // fn push(ref self: LinkedList<T>, nodeData: T);
+
 }
 
 impl LinkedListImpl<T, +Copy<T>> of LinkedListTrait<T> {
